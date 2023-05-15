@@ -60,9 +60,11 @@ DATA TYPE: LISTS</h4>
 ![](./images/features_len.png)
 ![](./images/reqts_len.png)
 
-DATA TYPE: TEXT LENGTH
-- Number of characters for the major text fields does not seem to be an indicator.
-- Most issue descriptions are longer than what SBERT can handle. We will need to separate them in smaller chunks, like sentences and then average the results of each.
+DATA TYPE: CATEGORIES:
+- '4C- New Feature' and '4A - Product Improvement' are more likely to move backward. The same can be said about issue type 'Program Planned' and 'Enhancement' are more likely to move backward. There is a known high correlation betwen these as their meaning overlaps.
+- Issues detected while developing system verification procedures are more likely to go backward. So are those found while implementing solution.
+- Source seems irrelevant as practically all issues are sourced as 'RC' ie internally created.
+- However, an externally sourced issue as double chance to go backward.
 ![](./images/criticality.png)
 ![](./images/source.png)
 ![](./images/detection.png)
